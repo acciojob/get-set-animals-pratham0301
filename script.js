@@ -22,6 +22,15 @@ class Cat extends Animal {
     }
 }
 
+// Creating instances to test
+const myCat = new Cat("Siamese");
+myCat.makeSound(); // Should output: "Siamese makes a sound"
+myCat.purr(); // Should output: "purr"
+
+const myDog = new Dog("Golden Retriever");
+myDog.makeSound(); // Should output: "Golden Retriever makes a sound"
+myDog.bark(); // Should output: "woof"
+
 // Do not change the code below this line
 window.Animal = Animal;
 window.Dog = Dog;
