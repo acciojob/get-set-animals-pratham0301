@@ -2,11 +2,13 @@ class Animal {
     constructor(species) {
         this._species = species;
     }
+
     get species() {
         return this._species;
     }
+
     makeSound() {
-        console.log(`${this._species} makes a sound`); // Corrected this line
+        console.log(`The ${this._species} makes a sound`); // Corrected output format
     }
 }
 
@@ -22,14 +24,14 @@ class Cat extends Animal {
     }
 }
 
-// Creating instances to test
+// Testing the implementation
 const myCat = new Cat("Siamese");
-myCat.makeSound(); // Should output: "Siamese makes a sound"
-myCat.purr(); // Should output: "purr"
+myCat.makeSound(); // Expected Output: "The Siamese makes a sound"
+myCat.purr(); // Expected Output: "purr"
 
 const myDog = new Dog("Golden Retriever");
-myDog.makeSound(); // Should output: "Golden Retriever makes a sound"
-myDog.bark(); // Should output: "woof"
+myDog.makeSound(); // Expected Output: "The Golden Retriever makes a sound"
+myDog.bark(); // Expected Output: "woof"
 
 // Do not change the code below this line
 window.Animal = Animal;
