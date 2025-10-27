@@ -1,4 +1,3 @@
-//complete this code
 class Animal {
     constructor(species) {
         this._species = species;
@@ -7,7 +6,7 @@ class Animal {
         return this._species;
     }
     makeSound() {
-        console.log(${this._species} makes a sound);
+        console.log(`${this._species} makes a sound`); // Corrected this line
     }
 }
 
@@ -26,4 +25,4 @@ class Cat extends Animal {
 // Do not change the code below this line
 window.Animal = Animal;
 window.Dog = Dog;
-window.Cat = Cat;
+window.Cat = Cat;
